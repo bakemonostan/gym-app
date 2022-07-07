@@ -10,6 +10,9 @@ import { youtubeOptions, exerciseOptions, fetchData } from '../utils/fetchData';
 const ExerciseDetails = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
   const [exerciseVideos, setExerciseVideos] = useState([]);
+  const [targetMuscleExercises, setTargetMuscleExercise] = useState([]);
+  const [equipmentExercises, setEquipmentExercise] = useState([]);
+
   const { id } = useParams();
 
   useEffect(() => {
